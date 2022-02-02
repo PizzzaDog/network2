@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>password</th>
+    </tr>
+    <tbody>
+
+    </tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}">ID</td>
+        <td th:text="${user.name}">NAME</td>
+        <td th:text="${user.surname}">SURNAME</td>
+        <td th:text="${user.username}">USER</td>
+        <td th:text="${user.password}">PASS</td>
+    </tr>
+</table>
